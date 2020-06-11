@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:background="#009688"
         android:onClick="goToLink2"
-        android:text="Click here"
+        android:text="@string/click_here"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,10 +23,10 @@
         app:layout_constraintVertical_bias="0.348" />
 
     <TextView
-        android:id="@+id/mechanismTitle"
+        android:id="@+id/HandleTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Useful Links about Fever"
+        android:text="@string/how_to_break_a_fever_healthline"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
