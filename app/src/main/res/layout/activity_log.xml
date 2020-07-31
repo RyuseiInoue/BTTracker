@@ -50,6 +50,7 @@
         android:layout_height="76dp"
         android:background="#bdb2ff"
         android:text="@string/save"
+        android:onClick="confirmBT"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#2d00f7"
         app:layout_constraintBottom_toBottomOf="parent"
