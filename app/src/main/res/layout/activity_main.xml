@@ -55,12 +55,11 @@
         app:layout_constraintVertical_bias="0.18">
 
         <TextView
-            android:id="@+id/MainButtun1"
+            android:id="@+id/MainButton1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#f20089"
-            android:onClick="goToLogActivity"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="@string/log_body_temperature"
@@ -80,7 +79,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#d100d1"
-            android:onClick="goToNormalActivity"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="@string/check_normal_range"
@@ -100,7 +98,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#8900f2"
-            android:onClick="goToMechanismActivity"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="@string/mechanism_of_fever"
@@ -120,7 +117,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#2d00f7"
-            android:onClick="goToHandleActivity"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="@string/handling_fever"
