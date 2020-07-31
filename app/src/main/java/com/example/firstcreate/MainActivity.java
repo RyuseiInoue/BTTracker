@@ -86,13 +86,11 @@ public class MainActivity extends AppCompatActivity implements
                 break;
             case R.id.MainButton4:
                 // If MainButton4 is clicked, do something
-                Intent openFeverLink = new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("https://www.healthline.com/health/how-to-break-a-fever"));
-                 // Verify that the intent openFeverLink will resolve properly
-                if(openFeverLink.resolveActivity(getPackageManager()) != null){
-                    startActivity(openFeverLink);
-                }
+                Intent toHandle = new Intent(this, HandleActivity.class);
+                startActivity(toHandle);;
                 break;
+
+
         }
     }
 
