@@ -26,6 +26,10 @@ public class MainActivity extends AppCompatActivity implements
         createNotificationChannel();
 
 
+        TextView setReminderButton = findViewById(R.id.setReminderButton);
+        setReminderButton.setOnClickListener(this);
+
+
         TextView mainButton1 = findViewById(R.id.MainButton1);
         mainButton1.setOnClickListener(this);
 
@@ -43,6 +47,28 @@ public class MainActivity extends AppCompatActivity implements
     public void onClick(View view) {
 
         switch (view.getId()) {
+
+
+            case R.id.setReminderButton:
+
+                Toast.makeText(this, "Reminder set!", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(this, ReminderBroadcastReceiver.class);
+
+                PendingIntent pd = PendingIntent.getBroadcast(this, 0, intent, 0);
+
+                AlarmManager alarmManager=
+                        (AlarmManager)getSystemService(ALARM_SERVICE);
+
+                long interval = 1000*6;
+
+                alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,
+                        System.currentTimeMillis(), interval, pd);
+
+                break;
+
+
+
             case R.id.MainButton1:
                 // If MainButton1 is clicked, do something
                 Intent toLog = new Intent(this, LogActivity.class);
