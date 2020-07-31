@@ -9,6 +9,7 @@
     tools:context=".MechanismActivity">
 
     <TextView
+        android:id="@+id/WhyDoWeHaveFever"
         android:layout_width="360dp"
         android:layout_height="49dp"
         android:background="#2d00f7"
